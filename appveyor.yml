@@ -20,7 +20,7 @@ artifacts:
 
 deploy:
   - provider: GitHub
-    api_key:
+    auth_token:
       secure: Prb/lsKP5VK0hN58Bw2RiU8uyi1kpNEleEOjybPQQQlSH3tXR7ru6s8J4I7hx/Um
     artifact: MarkdownDeepMarkdownEngine.zip
     description: "## First release\r\n\r\nProvide a plugin which use MarkdownDeep with Extra mode instead of the default markdown engine of [Pretzel](http://github.com/code52/pretzel)."
