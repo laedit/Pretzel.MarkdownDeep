@@ -3,7 +3,8 @@
 # Pretzel.MarkdownDeep
 
 Provide a plugin which use MarkdownDeep with Extra mode instead of the default markdown engine of [Pretzel](http://github.com/code52/pretzel).
+
 The MarkdownDeep usage can be modified directly in the `MarkDownDeepEngine.csx` file.
 
 ## Usage
-Simply unzip the files in the `_plugins` directory of your Pretzel site.
+Simply unzip the files from the last [release](https://github.com/laedit/Pretzel.MarkdownDeep/releases) in the `_plugins` directory of your Pretzel site.
