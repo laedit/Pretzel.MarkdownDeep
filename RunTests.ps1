@@ -62,7 +62,10 @@ $containsWord = $file | %{$_ -match $wordToFind}
 
 If($containsWord -contains $true)
 {
+    $originalForeground = $host.UI.RawUI.ForegroundColor
+    $host.UI.RawUI.ForegroundColor = "green"
     Write-Host "test passed"
+    $host.UI.RawUI.ForegroundColor = $originalForeground
 }
 Else {
     throw "Generated post doesn't contains table'"
