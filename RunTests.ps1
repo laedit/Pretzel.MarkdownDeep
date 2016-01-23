@@ -7,7 +7,7 @@ $postsFolder = "$testsiteFolder\_posts"
 $testGeneratedFile = "$testsiteFolder\_site\2015\11\06\MarkdownDeepTest.html"
 
 If (-Not (Test-Path $testsiteFolder)){
-    & "pretzel" create testsite
+    & "C:\tools\Pretzel\pretzel" create testsite
 
     if ($LASTEXITCODE -ne 0) 
     {
@@ -49,7 +49,7 @@ Start-Sleep -milliseconds 100
 Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory("$currentPath/artifacts/MarkdownDeepMarkdownEngine.zip", $pluginsFolder)
 
-& "pretzel" bake testsite --debug
+& "C:\tools\Pretzel\pretzel" bake testsite --debug
 
 if ($LASTEXITCODE -ne 0) 
 {
