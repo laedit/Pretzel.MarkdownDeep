@@ -1,12 +1,12 @@
 init:
   - git config --global core.autocrlf true
-  
-# install:
-#   - choco install pretzel -y
-#   - choco install pretzel.scriptcs -y
 
-#cache:
-#  - C:\tools\pretzel -> appveyor.yml
+install:
+  - choco install pretzel -y
+  - choco install pretzel.scriptcs -y
+
+cache:
+  - C:\tools\pretzel -> appveyor.yml
 
 build_script:
   - ps: .\build.ps1

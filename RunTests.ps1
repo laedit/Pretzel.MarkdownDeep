@@ -49,7 +49,7 @@ Start-Sleep -milliseconds 100
 Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::ExtractToDirectory("$currentPath/artifacts/MarkdownDeepMarkdownEngine.zip", $pluginsFolder)
 
-tools\Pretzel\pretzel bake testsite --debug
+pretzel bake testsite --debug
 
 if ($LASTEXITCODE -ne 0) 
 {
