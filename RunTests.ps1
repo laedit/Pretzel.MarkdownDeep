@@ -7,7 +7,7 @@ $postsFolder = "$testsiteFolder\_posts"
 $testGeneratedFile = "$testsiteFolder\_site\2015\11\06\MarkdownDeepTest.html"
 
 If (-Not (Test-Path $testsiteFolder)){
-    tools\Pretzel\pretzel create testsite
+    pretzel create testsite
 
     if ($LASTEXITCODE -ne 0) 
     {
